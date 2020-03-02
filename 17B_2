@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    float quantity, price, expenses, discount;
+    printf("Enter the quantity purchased:");
+    scanf("%f", &quantity);
+    printf("Enter the price per item:");
+    scanf("%f", &price);
+    expenses=quantity*price;
+    discount=((quantity>1000)?expenses*0.1:0);
+    expenses=expenses-discount;
+    printf("The net amount is:%f.", expenses);
+}

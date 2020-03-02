@@ -1,0 +1,11 @@
+// Find the bonus of an employee.
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int years_of_service, bonus;
+    printf("Enter the years of service:");
+    scanf("%d", &years_of_service);
+    bonus=((years_of_service>3)?2500:0);
+    printf("The bonus is:%d.", bonus);
+}

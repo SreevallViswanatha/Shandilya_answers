@@ -1,0 +1,13 @@
+// Find amount of profit or loss.
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    float cost_price, selling_price, profit_or_loss;
+    printf("Enter the cost price:");
+    scanf("%f", &cost_price);
+    printf("Enter the selling price:");
+    scanf("%f", &selling_price);
+    profit_or_loss=selling_price-cost_price;
+    (profit_or_loss<0)?printf("The loss is:%f", cost_price-selling_price):printf("The profit is:%f", selling_price-cost_price);
+}

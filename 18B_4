@@ -1,0 +1,12 @@
+// Accept two numbers and display the smallest.
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int number1, number2;
+    printf("Enter a number:");
+    scanf("%d", &number1);
+    printf("Enter a different number:");
+    scanf("%d", &number2);
+    (number1>number2)?printf("The second number is the smallest."):printf("The first number is the smallest.");
+}

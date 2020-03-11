@@ -1,4 +1,4 @@
-// Find the largest of three numbers in another way.
+// Find the largest of the three without using < or >
 
 #include <stdio.h>
 #include <stdlib.h>

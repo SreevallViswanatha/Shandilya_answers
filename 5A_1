@@ -1,0 +1,48 @@
+// WAP to accept the month and the number of the year and display the number of days in the month.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int month, days, year;
+    char other;
+
+    printf("Enter the year:");
+    scanf("%d", &year);
+
+    printf("Enter the month:");
+    scanf("%d", &month);
+
+    if(((year%4==0)&&!(year%100==0))||(year%400==0))
+        other='l';
+    else
+        other='n';
+    if(month==1)
+        days=31;
+    else if((month==2)&&(other=='l'))
+        days=29;
+    else if((month==2)&&(other=='n'))
+        days=28;
+    else if(month==3)
+        days=31;
+    else if(month==4)
+        days=30;
+    else if(month==5)
+        days=31;
+    else if(month==6)
+        days=30;
+    else if(month==7)
+        days=31;
+    else if(month==8)
+        days=31;
+    else if(month==9)
+        days=30;
+    else if(month==10)
+        days=31;
+    else if(month==11)
+        days=30;
+    else if(month==12)
+        days=31;
+
+    printf("The number of days are:%d.", days);
+}

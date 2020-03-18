@@ -1,0 +1,49 @@
+// WAP to accept the employee grade and salary and display the net salary.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int grade;
+    float HRA, salary, DA, PF, net_salary;
+
+    printf("Enter your grade:");
+    scanf("%d", &grade);
+
+    printf("Enter your salary:");
+    scanf("%f", &salary);
+
+    if(grade==1)
+    {
+        HRA=salary*50/100;
+        DA=salary*20/100;
+        PF=salary*5/100;
+    }
+    if(grade==2)
+    {
+        HRA=salary*40/100;
+        DA=salary*30/100;
+        PF=salary*3/100;
+    }
+    if(grade==3)
+    {
+        HRA=salary*30/100;
+        DA=salary*15/100;
+        PF=salary*4/100;
+    }
+    if(grade==4)
+    {
+        HRA=salary*20/100;
+        DA=salary*10/100;
+        PF=salary*5/100;
+    }
+    if(grade==5)
+    {
+        HRA=salary*10/100;
+        DA=salary*5/100;
+        PF=salary*2/100;
+    }
+    net_salary=salary+HRA+DA-PF;
+
+    printf("The net salary is:%f.", net_salary);
+}

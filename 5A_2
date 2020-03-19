@@ -1,0 +1,20 @@
+// WAP to accept the marks in two subjects and display if the student is pass or fail.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int subject1, subject2, total;
+
+    printf("Enter the marks of the first subject:");
+    scanf("%d", &subject1);
+
+    printf("Enter the marks of the second subject:");
+    scanf("%d", &subject2);
+
+    total=subject1+subject2;
+    if(((subject1>50)&&(subject2>50))||(total>120)||((subject1>80)||(subject2>80)))
+        printf("The student has passed.");
+    else
+        printf("The student has failed.");
+}

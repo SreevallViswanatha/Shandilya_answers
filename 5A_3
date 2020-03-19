@@ -1,0 +1,31 @@
+// WAP to display the wage to be paid to the worker based on the amount of hours worked and day of the week.
+
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+    float wage, day, bonus, hours;
+
+    printf("Enter the day:");
+    scanf("%f", &day);
+
+    printf("Enter the hours worked:");
+    scanf("%f", &hours);
+
+    if((day==1)||(day==2))
+        wage=100*hours;
+    if((day==3)||(day==4)||(day==5))
+        wage=110*hours;
+    if(day==6)
+        wage=150*hours;
+    if(day==7)
+        wage=200*hours;
+    if(wage>1000)
+        bonus=wage*10/100;
+    else
+        bonus=0;
+
+    wage=wage+bonus;
+
+    printf("The wage is:%f.", wage);
+}

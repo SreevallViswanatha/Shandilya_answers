@@ -1,0 +1,21 @@
+// WAP to accept the age of a candidate and citizenship status from the user and determine whether the candidate is eligible for casting a vote.
+// Any person who is a citizen and whose age is above 18 are eligible to cast a vote.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int age;
+    char eligibility;
+
+    printf("Enter the letter 'c' if you are a citizen and 'n' if you are a non-citizen:");
+    scanf("%c", &eligibility);
+
+    printf("Enter your age:");
+    scanf("%d", &age);
+
+    if((eligibility=='c')&&(age>=18))
+        printf("You are eligible to vote.");
+    else
+        printf("You are not eligible to vote.");
+}

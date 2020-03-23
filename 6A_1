@@ -1,0 +1,20 @@
+// WAP to accept the height of a person in centimeters and categorize the person according to their height.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    float centimeters;
+
+    printf("Enter your height:");
+    scanf("%f", &centimeters);
+
+    if(centimeters<=150.0)
+        printf("You are a dwarf.");
+    else if(centimeters<=165.0)
+        printf("You are normal.");
+    else if(centimeters<=195.0)
+        printf("You are tall.");
+    else
+        printf("Abnormal height.");
+}

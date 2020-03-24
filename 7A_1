@@ -1,0 +1,46 @@
+// WAP to read the roll number, name, and marks in three subjects and calculate the total, percentage, and division.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int roll_number;
+    float physics, chemistry, computer_application, total_marks, percentage;
+    char name[100];
+    
+    printf("Enter the name of the student:");
+    scanf("%c", name);
+    
+    printf("Enter the roll number of the student:");
+    scanf("%d", &roll_number);
+    
+    printf("Enter the marks in physics:");
+    scanf("%f", &physics);
+    
+    printf("Enter the marks in chemistry:");
+    scanf("%f", &chemistry);
+    
+    printf("Enter the marks in computer application:");
+    scanf("%f", &computer_application);
+    
+    total_marks=physics+chemistry+computer_application;
+    percentage=total_marks/3;
+    
+    printf("The roll number is:%d.\n", roll_number);
+    printf("The name of the student is:%s", name);
+    printf("The marks in physics are:%f.\n", physics);
+    printf("The marks in chemistry are:%f.\n", chemistry);
+    printf("The marks in computer application are:%f.\n", computer_application);
+    printf("The total marks are:%f.\n", total_marks);
+    printf("The percentage is:%f.\n", percentage);
+    
+    if(percentage>=60)
+        printf("The division is first.");
+    else if(percentage>=48)
+        printf("The division is second.");
+    else if(percentage>=36)
+        printf("The division is pass.");
+    else
+        printf("The division is fail.");
+    
+}

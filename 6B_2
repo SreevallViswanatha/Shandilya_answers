@@ -1,0 +1,22 @@
+// WAP to find the eligibility of admission for a professional course.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int math, physics, chemistry;
+    
+    printf("Enter the marks in math:");
+    scanf("%d", &math);
+    
+    printf("Enter the marks in physics:");
+    scanf("%d", &physics);
+    
+    printf("Enter the marks in chemistry:");
+    scanf("%d", &chemistry);
+    
+    if(((math>=65)&&(physics>=55)&&(chemistry>=50)&&(math+physics+chemistry>=180))||(math+physics>=140))
+        printf("The candidate is eligible for admission.");
+    else
+        printf("The candidate is not eligible for admission.");
+}

@@ -1,0 +1,24 @@
+// WAP to accept the three sides of a triangle and check whether the triangle is equilateral, isosceles, or scalene.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int angle1, angle2, angle3;
+    
+    printf("Enter the degrees of the first angle:");
+    scanf("%d", &angle1);
+    
+    printf("Enter the degrees of the second angle:");
+    scanf("%d", &angle2);
+    
+    printf("Enter the degrees of the third angle:");
+    scanf("%d", &angle3);
+    
+    if((angle1==angle2)&&(angle2==angle3)&&(angle1==angle3))
+        printf("The triangle is an equilateral triangle.");
+    else if(((angle1==angle2)&&!(angle2==angle3)&&!(angle1==angle3))||(!(angle1==angle2)&&!(angle2==angle3)&&(angle1==angle3))||(!(angle1==angle2)&&(angle2==angle3)&&!(angle1==angle3)))
+        printf("The triangle is an isosceles triangle.");
+    else
+        printf("The triangle is a scalene triangle.");
+}

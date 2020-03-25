@@ -1,0 +1,24 @@
+// WAP to read temperature in centigrade and display a suitable message according to the temperature.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int centigrade;
+
+    printf("Enter the degrees in centigrade:");
+    scanf("%d", &centigrade);
+
+    if(centigrade<0)
+        printf("The temperature is freezing.");
+    else if(centigrade<10)
+        printf("The temperature is very cold.");
+    else if(centigrade<20)
+        printf("The temperature is cold.");
+    else if(centigrade<30)
+        printf("The temperature is normal.");
+    else if(centigrade<40)
+        printf("The temperature is hot.");
+    else
+        printf("The temperature is very hot.");
+}

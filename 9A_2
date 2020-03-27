@@ -1,4 +1,4 @@
-// WAP to check whether a character is an alphabet, digit, or special character.
+// WAP to check whether a character is an letter, digit, or special character.
 
 #include <stdio.h>
 #include <stdlib.h>

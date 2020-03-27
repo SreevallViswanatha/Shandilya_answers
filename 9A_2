@@ -1,0 +1,19 @@
+// WAP to check whether a character is an alphabet, digit, or special character.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    char c;
+    printf("Enter any just one value on the keyboard:");
+    scanf("%c", &c);
+
+    if((c>=65)&&(c<=90))
+        printf("The character is uppercase.");
+    else if((c>=97)&&(c<=122))
+        printf("The character is lowercase.");
+    else if((c>=48)&&(c<=57))
+        printf("The character is a digit.");
+    else
+        printf("The character is a special symbol.");
+}

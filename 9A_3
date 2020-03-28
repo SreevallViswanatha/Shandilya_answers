@@ -1,0 +1,20 @@
+// WAP to check whether a letter entered by the user is a vowel or a consonant.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    char letter;
+
+    printf("Enter a lowercase letter:");
+    scanf("%c", &letter);
+
+    if((letter==97)||(letter==101)||(letter==105)||(letter==111)||(letter==117))
+        printf("The letter %c is a lowercase vowel.", letter);
+    else if(((letter>=98)&&(letter<=100))||((letter>=102)&&(letter<=104))||((letter>=106)&&(letter<=110))||((letter>=112)&&(letter<=116)))
+        printf("The letter %c is an lowercase consonant.", letter);
+    else if((letter>=65)&&(letter<=90))
+        printf("The letter %c is uppercase.", letter);
+    else
+        printf("The character %c is not a letter.", letter);
+}

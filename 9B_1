@@ -1,0 +1,40 @@
+// WAP to print the electricity bill of a given customer.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    float rupees, unit, surcharge, charge, net_amount;
+    int customer_id;
+    char name[200];
+    
+    printf("Enter the customer ID:");
+    scanf("%d", &customer_id);
+    
+    printf("Enter the amount of units used:");
+    scanf("%f", &unit);
+    
+    printf("Enter your name:");
+    scanf("%s", name);
+    if(unit<200)
+        charge=1.20;
+    else if(unit<400)
+        charge=1.50;
+    else if(unit<600)
+        charge=1.80;
+    else
+        charge=2.00;
+        rupees=unit*charge;
+        surcharge=0.0;
+    if(rupees>400)
+        surcharge=rupees*15/100;
+        
+    net_amount=rupees+surcharge;
+    
+    printf("Customer ID number:%d\n", customer_id);
+    printf("Customer name:%s\n", name);
+    printf("Units consumed:%f\n", unit);
+    printf("Amount charged @%f per unit:%f\n", charge, rupees);
+    printf("Surcharge amount:%f\n", surcharge);
+    printf("Net amount paid by the consumer:%f\n", net_amount);
+}

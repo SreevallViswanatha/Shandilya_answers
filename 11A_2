@@ -1,4 +1,4 @@
-// WAP to display the division of a student using logical operators.
+// WAP to display the division of a student using logical operators
 
 #include <stdio.h>
 #include <stdlib.h>

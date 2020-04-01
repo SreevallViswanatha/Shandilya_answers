@@ -22,7 +22,7 @@ main()
     printf("Enter the marks of subject 5:");
     scanf("%d", &marks5);
 
-    percentage_marks=(marks1+marks2+marks3+marks4+marks5)/5;
+    percentage_marks=(marks1+marks2+marks3+marks4+marks5)/5.0;
 
     if(percentage_marks>=60)
         printf("The student is in the first class division.\n\n");

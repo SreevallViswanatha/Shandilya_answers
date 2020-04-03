@@ -1,0 +1,32 @@
+// WAP to calculate the salary of an employee.
+
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+    int years_of_service, salary;
+    char gender, qualifications;
+
+    printf("Enter the qualifications(P for post-graduate and G for graduate):");
+    scanf("%c", &qualifications);
+
+    printf("Enter the gender(M for male and F for female):");
+    scanf("%c", &gender);
+
+    printf("Enter the years of service:");
+    scanf("%d", &years_of_service);
+
+    if(((gender=='M')&&(qualifications=='G')&&(years_of_service>=10))||((gender=='M')&&(qualifications=='P')&&(years_of_service<10))||((gender=='F')&&(qualifications=='P')&&(years_of_service<10)))
+        salary=10000;
+    else if((gender=='M')&&(qualifications=='P')&&(years_of_service>=10))
+        salary=15000;
+    else if((gender=='M')&&(qualifications=='P')&&(years_of_service<10))
+        salary=7000;
+    else if((gender=='F')&&(qualifications=='P')&&(years_of_service>=10))
+        salary=12000;
+    else if((gender=='F')&&(qualifications=='G')&&(years_of_service>=10))
+        salary=9000;
+    else if((gender=='F')&&(qualifications=='G')&&(years_of_service<10))
+        salary=6000;
+    printf("The salary is:%d", salary);
+}

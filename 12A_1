@@ -1,4 +1,4 @@
-// WAP to determine if a driver should be insured using logical operators
+// WAP to determine if a driver should be insured using logical operators.
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -6,7 +6,7 @@ main()
 {
     char gender, marital_status;
     int age;
-    printf("Enter sex('M' for Male and 'F' for female):");
+    printf("Enter gender('M' for Male and 'F' for female):");
     scanf("%c", &gender);
 
     printf("Enter the marital status('M' for married and 'U' for Unmarried):");

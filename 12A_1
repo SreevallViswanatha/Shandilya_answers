@@ -1,0 +1,23 @@
+// WAP to determine if a driver should be insured using logical operators.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int age;
+    char gender, marital_status;
+
+    printf("Enter the gender(M for male and F for female):");
+    scanf("%c", &gender);
+
+    printf("Enter the marital status(M for married and U for unmarried):");
+    scanf("%c", &marital_status);
+
+    printf("Enter the age:");
+    scanf("%d", &age);
+
+    if((marital_status=='M')||((marital_status=='U')&&(gender=='M')&&(age>30))||((marital_status=='U')&&(gender=='F')&&(age>25)))
+        printf("The driver is insured.");
+    else
+        printf("The driver is not insured.");
+}

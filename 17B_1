@@ -1,9 +1,0 @@
-#include <stdio.h>
-#include <stdlib.h>
-main()
-{
-    int number;
-    printf("Enter a number less than 10:");
-    scanf("%d", &number);
-    (number<10)?printf("What an obedient servant you are!"):printf("Wrong number.");
-}

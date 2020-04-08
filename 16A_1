@@ -1,0 +1,32 @@
+// WAP to receive weight and height, calculate the BMI, and report the BMI category.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    float weight, height, BMI;
+    printf("Enter the weight in kilograms:");
+    scanf("%f", &weight);
+
+    printf("Enter the height in meters:");
+    scanf("%f", &height);
+
+    BMI=weight/(height*height);
+
+    printf("The BMI is:%f.", BMI);
+
+    if(BMI<=15.0)
+        printf("Starvation");
+    else if(BMI<=17.5)
+        printf("Anorexic");
+    else if(BMI<=18.5)
+        printf("Underweight");
+    else if(BMI<=24.9)
+        printf("Average");
+    else if(BMI<=25.9)
+        printf("Overweight");
+    else if(BMI<=30.9)
+        printf("Obese");
+    else
+        printf("Morbidly obese");
+}

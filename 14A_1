@@ -1,0 +1,49 @@
+// If the three sides of a triangle are entered through the keyboard to check whether the triangle is valid or not.
+
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+    int side1, side2, side3, largest, sum;
+
+    printf("Enter the length of the first side:");
+    scanf("%d", &side1);
+
+    printf("Enter the length of the second side:");
+    scanf("%d", &side2);
+
+    printf("Enter the length of the third side:");
+    scanf("%d", &side3);
+
+
+    if(side1>side2)
+    {
+        if(side1>side3)
+        {
+            largest=side1;
+            sum=side2+side3;
+        }
+        else
+        {
+            largest=side3;
+            sum=side1+side2;
+        }
+    }
+    if(side2>side1)
+    {
+        if(side2>side3)
+        {
+            largest=side2;
+            sum=side1+side3;
+        }
+        else
+        {
+            largest=side3;
+            sum=side1+side2;
+        }
+    }
+    if(sum>largest)
+        printf("The triangle is valid.");
+    else
+        printf("The triangle is not valid.");
+}

@@ -1,0 +1,22 @@
+// WAP that receives the boxer's weight as input and outputs the boxer's class.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    float weight;
+
+    printf("Enter the weight of the boxer:");
+    scanf("%f", &weight);
+
+    if(weight<115.0)
+        printf("The boxer is a flyweight.");
+    else if(weight<=121.0)
+        printf("The boxer is a bantamweight.");
+    else if(weight<=153.0)
+        printf("The boxer is a featherweight.");
+    else if(weight<=189.0)
+        printf("The boxer is a middleweight.");
+    else
+        printf("The boxer is a heavyweight.");
+}

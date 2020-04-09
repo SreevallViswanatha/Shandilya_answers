@@ -1,0 +1,15 @@
+// WAP to ask the user to enter a number less than 10.
+// If the number is less than 10, print "What an obedient servant you are."
+// Else, print "Wrong number."
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int number;
+    
+    printf("Enter a number less than 10:");
+    scanf("%d", &number);
+    
+    (number<10)?printf("What an obedient servant you are!"):printf("Wrong number.");
+}

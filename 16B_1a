@@ -1,0 +1,14 @@
+// WAP to determine whether a letter is lowercase or not.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    char letter;
+
+    printf("Enter a letter:");
+    scanf("%c", &letter);
+
+    (letter>=97)&&(letter<=122)?printf("The character is a lowercase letter."):
+        printf("The character is not a lowercase letter.");
+}

@@ -1,0 +1,15 @@
+// Determine whether a character is a special symbol or not.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    char letter;
+
+    printf("Enter any digit, letter, or special symbol:");
+    scanf("%c", &letter);
+
+    ((letter>=0)&&(letter<=47))||((letter>=58)&&(letter<=64))||((letter>=91)&&(letter<=96))||((letter>=123)&&(letter<=127))?
+        printf("The character is a special symbol."):
+        printf("The character is not a special symbol.");
+}

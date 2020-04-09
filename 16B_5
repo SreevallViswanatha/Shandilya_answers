@@ -1,0 +1,13 @@
+// WAP to receive salary and determine position of employee.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int salary;
+    
+    printf("Enter the salary:");
+    scanf("%d", &salary);
+    
+    ((salary>25000)&&(salary<=40000)?printf("The position is manager."):((salary>15000)&&(salary<=25000)?printf("The position is accountant."):(salary<=15000?printf("The position is clerk."):printf("Higher position."))));
+}

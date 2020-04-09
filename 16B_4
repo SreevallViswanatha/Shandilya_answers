@@ -1,0 +1,17 @@
+// Check if sum of squares of sine and cosine of an angle is equal to 1.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+main()
+{
+    float angle, sum;
+
+    printf("Enter an angle:");
+    scanf("%f", &angle);
+
+    angle=angle*3.14/180;
+    sum=pow(sin(angle), 2)+pow(cos(angle), 2);
+
+    (sum==1)?printf("The sum of the squares of sine and cosine are equal to 1."):printf("The sum of the squares of sine and cosine are not equal to 1.");
+}

@@ -1,0 +1,30 @@
+// Find reverse number of a number entered and determine if original and reverse numbers are equal or not.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int number, reverse_number, a, n;
+
+    printf("Enter a five-digit number:");
+    scanf("%d", &number);
+
+    n=number;
+    a=number%10;
+    reverse_number=a*10000;
+    number=number/10;
+    a=number%10;
+    reverse_number=reverse_number+a*1000;
+    number=number/10;
+    a=number%10;
+    reverse_number=reverse_number+a*100;
+    number=number/10;
+    a=number%10;
+    reverse_number=reverse_number+a*10;
+    number=number/10;
+    reverse_number=reverse_number+number;
+
+    printf("The reverse number is:%d.\n", reverse_number);
+
+    (n==reverse_number)?printf("The original number is equal to the reverse number."):printf("The original number is not equal to the reverse number.");
+}

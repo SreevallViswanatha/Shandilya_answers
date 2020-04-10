@@ -1,0 +1,19 @@
+// Find the bonus of an employee.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int current_year, year_of_joining, years_of_service, bonus;
+    printf("Enter the year of joining:");
+    scanf("%d", &year_of_joining);
+
+    printf("Enter the current year:");
+    scanf("%d", &current_year);
+
+    years_of_service=current_year-year_of_joining;
+
+    bonus=((years_of_service>3)?2500:0);
+
+    printf("The bonus is:%d.", bonus);
+}

@@ -1,0 +1,21 @@
+// Take three numbers from the user and display the smallest.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int number1, number2, number3, smallest;
+
+    printf("Enter the first number:");
+    scanf("%d", &number1);
+
+    printf("Enter the second number:");
+    scanf("%d", &number2);
+
+    printf("Enter the third number:");
+    scanf("%d", &number3);
+
+    smallest=(number1<number2)?((number1<number3)?number1:number3):((number2<number3)?number2:number3);
+
+    printf("The smallest number is:%d.", smallest);
+}

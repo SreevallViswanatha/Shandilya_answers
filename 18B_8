@@ -1,0 +1,19 @@
+// WAP to see if a triangle is valid or not when each of its angles is entered.
+
+#include <stdio.h>
+#include <stdlib.h>
+main()
+{
+    int angle1, angle2, angle3;
+
+    printf("Enter the measure of the first angle:");
+    scanf("%d", &angle1);
+
+    printf("Enter the measure of the second angle:");
+    scanf("%d", &angle2);
+
+    printf("Enter the measure of the third angle:");
+    scanf("%d", &angle3);
+
+    (angle1+angle2+angle3==180)?printf("The triangle is valid."):printf("The triangle is not valid.");
+}

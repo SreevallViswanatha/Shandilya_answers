@@ -1,0 +1,40 @@
+// Write a program to find the grace marks for a student using switch.
+// The user should enter the class obtained by the student and the number of subjects he has failed in.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int division, subjects_failed;
+
+    printf("Enter the division of the student(1 for first, 2 for second, and 3 for third):");
+    scanf("%d", &division);
+
+    printf("Enter the number of subjects failed:");
+    scanf("%d", &subjects_failed);
+
+    switch(division)
+    {
+    case 1:
+        if(subjects_failed>3)
+            printf("There are no grace marks given.");
+        else
+            printf("The grace marks are:%d.", subjects_failed*5);
+        break;
+    case 2:
+        if(subjects_failed>2)
+            printf("There are no grace marks given.");
+        else
+            printf("The grace marks are:%d.", subjects_failed*4);
+        break;
+    case 3:
+        if(subjects_failed>1)
+            printf("There are no grace marks given.");
+        else
+            printf("The grace marks are 5.");
+            break;
+    default:
+            printf("You have entered a wrong class.");
+    }
+}

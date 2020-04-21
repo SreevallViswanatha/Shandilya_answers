@@ -7,7 +7,7 @@ main()
     int number;
     float area, radius, length, breadth, base, height;
 
-    printf("Enter the numbers 1, 2, or 3:");
+    printf("Enter 1 for circle, 2 for rectangle, or 3 for triangle:");
     scanf("%d", &number);
 
     switch(number)
